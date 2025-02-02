@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide Show Password</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/1a096d1e89.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="input-box">
+        <input type="password" placeholder="Enter password" id="password">
+        <!-- <i class="fa-solid fa-eye" ></i> -->
+        <i class="fa-solid fa-eye-slash" id="show"></i>
+
+
+    </div>
+
+    <script>
+        let password = document.getElementById("password");
+        let show = document.getElementById("show");
+        let icon = document.querySelector("i");
+
+        show.onclick = function() {
+            if (password.type == "password") {
+                password.type = "text";
+                icon.classList.remove("fa-eye-slash");
+                icon.classList.add("fa-eye");
+            } else {
+                password.type = "password"
+                    //icon.classList.add("fa-eye-slash");
+                    //icon.classList.remove("fa-eye");
+
+
+
+            }
+        }
+    </script>
+
+</body>
+
+</html>

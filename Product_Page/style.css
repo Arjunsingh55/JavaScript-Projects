@@ -1,0 +1,31 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: #d0eaff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product {
+    width: 90%;
+    max-width: 750px;
+    display: flex;
+}
+
+.gallery {
+    flex-basis: 47%;
+    background: #241e24;
+}
+
+.gallery img {
+    width: 100%;
+    display: block;
+    padding-top: 100px;
+}
